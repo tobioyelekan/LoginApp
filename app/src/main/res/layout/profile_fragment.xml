@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        tools:context=".fragment.Profile">
+
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/progress"
+            android:layout_height="wrap_content"/>
+
+    <ScrollView
+            android:id="@+id/contentView"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    app:civ_border_color="#ffffff"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                    app:civ_circle_background_color="#B7B7B7"
+                    app:civ_border_width="3dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_person_profile"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oyelekan Tobi"
+                    android:id="@+id/fullname"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="edit profile"
+                    android:id="@+id/editProfile"
+                    android:layout_marginTop="5dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_gravity="center"/>
+
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Personal Information"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="First Name"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/fname"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Last Name"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/lname"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Phone"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/phone"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="State"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/state"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Email"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/email"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Address"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                    <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/address"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

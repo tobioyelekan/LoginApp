@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        tools:context=".activity.Register"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:hint="enter first name"
+                android:layout_height="wrap_content"
+                android:id="@+id/fname"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter last name"
+                android:id="@+id/lname"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter email"
+                android:inputType="textEmailAddress"
+                android:id="@+id/email"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter phone number"
+                android:inputType="phone"
+                android:id="@+id/phone"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter address"
+                android:id="@+id/address"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter state"
+                android:id="@+id/state"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:hint="enter password"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:id="@+id/pass1"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="confirm password"
+                android:id="@+id/pass2"/>
+
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/register"
+                android:text="Register"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:startDestination="@id/fragment_home"
+            android:id="@+id/mobile_navigation">
+
+    <fragment
+            android:label="Home"
+            android:id="@+id/fragment_home"
+            android:name="com.example.android.loginapp.fragment.Home"/>
+
+    <fragment
+            android:label="Profile"
+            android:id="@+id/fragment_profile"
+            android:name="com.example.android.loginapp.fragment.Profile">
+
+        <action
+                app:destination="@id/fragment_edit_profile"
+                android:id="@+id/action_edit_profile"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/fragment_edit_profile"
+            android:label="Edit profile"
+            android:name="com.example.android.loginapp.fragment.EditProfile">
+        <argument
+                android:name="fname"
+                app:argType="string"/>
+        <argument
+                android:name="lname"
+                app:argType="string"/>
+        <argument
+                android:name="phone"
+                app:argType="string"/>
+        <argument
+                android:name="email"
+                app:argType="string"/>
+        <argument
+                android:name="state"
+                app:argType="string"/>
+        <argument
+                android:name="address"
+                app:argType="string"/>
+    </fragment>
+
+</navigation>
